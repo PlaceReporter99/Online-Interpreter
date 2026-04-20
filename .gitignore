@@ -1,3 +1,4 @@
 __pycache__
 *.insert_here
 temp_programs/*
+!temp_programs/directory.txt
