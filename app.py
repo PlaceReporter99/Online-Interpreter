@@ -20,7 +20,7 @@ def interpret():
   code = request.json["code"]
   inp = request.json["input"]
   flag = request.json["flag"]
-  dom = "prog_files/" + token_hex(64)
+  dom = "temp_programs/" + token_hex(64)
   no_inp = False
   with open(dom + FILE_EXTENSION, "x") as cod:
     cod.write(code)
