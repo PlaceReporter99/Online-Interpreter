@@ -13,7 +13,7 @@ Your program must return a tuple of four values, in order:
 * `REQUIRE_PRINT`, whether to print the output. Set to false if your implementation has already printed it to STDOUT.
 * `REQUIRE_ERROR`, whether to print the error. Set to false if your implementation has already printed it to STDERR.
 
-If you already have a standalone Python program that does this, just pop it in the main directory (ensure there are no name conflicts), pop the modules in `needed_modules`, refactor it to import stuff from that folder, and just use something like `subprocess.run` in the `evaluate_program` function. If your program outputs the necessary things to STDOUT and STDERR, you should then sent both `REQUIRE_PRINT` and `REQUIRE_ERROR` to false.
+If you already have a standalone Python program that does this, just pop it in the main directory (ensure there are no name conflicts), pop the modules in a separate folder (ideally), refactor it to import stuff from that folder, and just use something like `subprocess.run` in the `evaluate_program` function. If your program outputs the necessary things to STDOUT and STDERR, you should then sent both `REQUIRE_PRINT` and `REQUIRE_ERROR` to false.
 ### `config.py`
 * Set `LANGUAGE_NAME` to the name of your programming language.
 * Set `LANGUAGE_PAGE` to a URL of your programming language. It can be a Wikipedia entry, an esolangs.org entry, etc.
